@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Contact extends AppCompatActivity implements View.OnClickListener {
 
     Button _btnSubmit, _btnClear;
+    ImageButton _btnBack;
     EditText _email, _message;
 
     @Override
@@ -20,6 +22,7 @@ public class Contact extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_contact);
         _btnSubmit = findViewById(R.id.btn_submit);
         _btnClear = findViewById(R.id.btn_clear);
+        _btnBack = findViewById(R.id.btn_back);
         _email = (EditText) findViewById(R.id.email);
         _message = findViewById(R.id.message);
 
@@ -27,17 +30,19 @@ public class Contact extends AppCompatActivity implements View.OnClickListener {
 
         _btnSubmit.setOnClickListener(this);
         _btnClear.setOnClickListener(this);
+        _btnBack.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         if (v == _btnSubmit) {
-
-            String recipients = _email.getText().toString();
+            String recipientList = _email.getText().toString();
+            String[] recipients = recipientList.split(",");
             String message = _message.getText().toString();
 
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.putExtra(Intent.EXTRA_EMAIL, recipients);
+            intent.putExtra(Intent.EXTRA_SUBJECT, "");
             intent.putExtra(Intent.EXTRA_TEXT, message);
 
             intent.setType("message/rfc822");
@@ -47,8 +52,10 @@ public class Contact extends AppCompatActivity implements View.OnClickListener {
 //            startActivity(intent);
         }
         if (v== _btnClear) {
-            Intent intent = new Intent(Contact.this, Contact.class);
-            startActivity(intent);
+            _message.getText().clear();
+        }
+        if (v== _btnBack) {
+            finish();
         }
     }
 }
