@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -10,9 +11,12 @@
         android:layout_width="312dp"
         android:layout_height="56dp"
         android:background="@drawable/btn_secondary"
-        android:drawableEnd="@drawable/person"
+        android:drawableEnd="@drawable/email"
         android:ems="10"
         android:fontFamily="@font/poppins"
+        android:paddingLeft="12dp"
+        android:hint="Email"
+        android:textColor="@color/biru_primary"
         android:inputType="textEmailAddress"
         android:paddingRight="12dp"
         android:textSize="16dp"
@@ -27,6 +31,8 @@
         android:background="@drawable/btn_secondary"
         android:drawableEnd="@drawable/lock"
         android:ems="10"
+        android:hint="Password"
+        android:paddingLeft="12dp"
         android:fontFamily="@font/poppins"
         android:inputType="textPassword"
         android:paddingRight="12dp"
@@ -87,7 +93,7 @@
         android:inputType="text"
         android:paddingRight="12dp"
         android:textSize="16dp"
-        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteX="50dp"
         tools:layout_editor_absoluteY="491dp" />
 
     <!--    edit text plain untuk di isi review atau isi pesan -->
@@ -103,6 +109,7 @@
         android:textSize="16dp"
         tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="555dp" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

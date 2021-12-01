@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="98dp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="312dp"
+        android:layout_width="365dp"
         android:layout_height="56dp"
         android:background="@drawable/btn_primary"
         android:fontFamily="@font/poppins"
@@ -26,7 +26,7 @@
         tools:layout_editor_absoluteY="168dp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="312dp"
+        android:layout_width="365dp"
         android:layout_height="56dp"
         android:background="@drawable/btn_primary"
         android:fontFamily="@font/poppins"
@@ -115,7 +115,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
 
-                android:layout_width="270dp"
+                android:layout_width="323dp"
                 android:layout_height="42dp"
                 android:background="@drawable/btn_secondary"
                 android:fontFamily="@font/poppins"
