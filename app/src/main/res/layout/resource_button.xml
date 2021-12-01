@@ -19,11 +19,66 @@
         android:layout_height="56dp"
         android:background="@drawable/btn_primary"
         android:fontFamily="@font/poppins"
-        android:textSize="14dp"
         android:text="Login"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="168dp" />
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_secondary"
+        android:fontFamily="@font/poppins"
+        android:text="Clear"
+        android:textColor="@color/biru_primary"
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_primary"
+        android:fontFamily="@font/poppins"
+        android:text="Book"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_primary"
+        android:fontFamily="@font/poppins"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_secondary"
+        android:fontFamily="@font/poppins"
+        android:text="Delete"
+        android:textColor="@color/biru_primary"
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_primary"
+        android:fontFamily="@font/poppins"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="376dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="365dp"
@@ -33,64 +88,9 @@
         android:text="Register"
         android:textColor="@color/white"
         android:textSize="14dp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="241dp" />
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="238dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="145dp"
-        android:layout_height="56dp"
-        android:background="@drawable/btn_primary"
-        android:fontFamily="@font/poppins"
-        android:text="Book"
-        android:textColor="@color/white"
-        android:textSize="14dp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="310dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="145dp"
-        android:layout_height="56dp"
-        android:background="@drawable/btn_secondary"
-        android:fontFamily="@font/poppins"
-        android:text="Clear"
-        android:textColor="@color/biru_primary"
-        android:textSize="14dp"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="310dp" />
-
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="145dp"
-        android:layout_height="56dp"
-        android:background="@drawable/btn_secondary"
-        android:fontFamily="@font/poppins"
-        android:text="Delete"
-        android:textColor="@color/biru_primary"
-        android:textSize="14dp"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="379dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="145dp"
-        android:layout_height="56dp"
-        android:background="@drawable/btn_primary"
-        android:fontFamily="@font/poppins"
-        android:text="Submit"
-        android:textColor="@color/white"
-        android:textSize="14dp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="379dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="145dp"
-        android:layout_height="56dp"
-        android:background="@drawable/btn_primary"
-        android:fontFamily="@font/poppins"
-        android:text="Update"
-        android:textColor="@color/white"
-        android:textSize="14dp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="445dp" />
 
     <FrameLayout
         android:layout_width="wrap_content"

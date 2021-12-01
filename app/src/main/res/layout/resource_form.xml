@@ -8,7 +8,7 @@
 <!--    email untuk login-->
 
     <EditText
-        android:layout_width="312dp"
+        android:layout_width="365dp"
         android:layout_height="56dp"
         android:background="@drawable/btn_secondary"
         android:drawableEnd="@drawable/email"
@@ -26,7 +26,7 @@
 <!--    password untuk login-->
 
     <EditText
-        android:layout_width="312dp"
+        android:layout_width="365dp"
         android:layout_height="56dp"
         android:background="@drawable/btn_secondary"
         android:drawableEnd="@drawable/lock"
@@ -43,7 +43,7 @@
 <!--    edit text nama untuk diregister atau di fitur yang lain-->
 
     <EditText
-        android:layout_width="312dp"
+        android:layout_width="365dp"
         android:layout_height="56dp"
         android:background="@drawable/btn_secondary"
         android:ems="10"
@@ -57,7 +57,7 @@
     <!--    edit text email untuk register atau di fitur yang lain-->
 
     <EditText
-        android:layout_width="312dp"
+        android:layout_width="365dp"
         android:layout_height="56dp"
         android:background="@drawable/btn_secondary"
         android:ems="10"
@@ -71,7 +71,7 @@
     <!--    edit text nama untuk register -->
 
     <EditText
-        android:layout_width="312dp"
+        android:layout_width="365dp"
         android:layout_height="56dp"
         android:background="@drawable/btn_secondary"
         android:ems="10"
@@ -85,7 +85,7 @@
     <!--    edit text plain untuk di semuafitur -->
 
     <EditText
-        android:layout_width="312dp"
+        android:layout_width="365dp"
         android:layout_height="42dp"
         android:background="@drawable/btn_secondary"
         android:ems="10"
@@ -99,7 +99,7 @@
     <!--    edit text plain untuk di isi review atau isi pesan -->
 
     <EditText
-        android:layout_width="312dp"
+        android:layout_width="365dp"
         android:layout_height="72dp"
         android:background="@drawable/btn_secondary"
         android:ems="10"
