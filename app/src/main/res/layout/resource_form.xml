@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    email untuk login-->
+
+    <EditText
+        android:layout_width="312dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_secondary"
+        android:drawableEnd="@drawable/person"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="textEmailAddress"
+        android:paddingRight="12dp"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+<!--    password untuk login-->
+
+    <EditText
+        android:layout_width="312dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_secondary"
+        android:drawableEnd="@drawable/lock"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="textPassword"
+        android:paddingRight="12dp"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="136dp" />
+
+<!--    edit text nama untuk diregister atau di fitur yang lain-->
+
+    <EditText
+        android:layout_width="312dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_secondary"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="textPersonName"
+        android:paddingRight="12dp"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <!--    edit text email untuk register atau di fitur yang lain-->
+
+    <EditText
+        android:layout_width="312dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_secondary"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="textEmailAddress"
+        android:paddingRight="12dp"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <!--    edit text nama untuk register -->
+
+    <EditText
+        android:layout_width="312dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_secondary"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="textPassword"
+        android:paddingRight="12dp"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <!--    edit text plain untuk di semuafitur -->
+
+    <EditText
+        android:layout_width="312dp"
+        android:layout_height="42dp"
+        android:background="@drawable/btn_secondary"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        android:paddingRight="12dp"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="491dp" />
+
+    <!--    edit text plain untuk di isi review atau isi pesan -->
+
+    <EditText
+        android:layout_width="312dp"
+        android:layout_height="72dp"
+        android:background="@drawable/btn_secondary"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        android:paddingRight="12dp"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="555dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
