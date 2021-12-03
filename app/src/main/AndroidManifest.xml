@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bookingin">
         <activity
+            android:name=".ConfirmReview"
+            android:exported="false" />
+        <activity
+            android:name=".Review"
+            android:exported="false" />
+        <activity
             android:name=".Register"
             android:exported="false" />
         <activity

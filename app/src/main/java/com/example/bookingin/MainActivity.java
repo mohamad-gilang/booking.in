@@ -9,20 +9,26 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    ImageButton _btnBooking,_btnReview,_btnContact,_btnWishlist,_btnMap,_btnDestination;
+    ImageButton _btnBooking, _btnReview, _btnContact, _btnWishlist, _btnMap, _btnDestination;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         _btnContact = findViewById(R.id.toContact);
+        _btnReview = findViewById(R.id.toReviews);
 
         _btnContact.setOnClickListener(this);
+        _btnReview.setOnClickListener(this);
     }
 
     public void onClick(View v) {
-        if (v == _btnContact){
+        if (v == _btnContact) {
             Intent intent = new Intent(MainActivity.this, Contact.class);
+            startActivity(intent);
+        }
+        if (v == _btnReview) {
+            Intent intent = new Intent(MainActivity.this, Review.class);
             startActivity(intent);
         }
     }

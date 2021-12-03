@@ -18,14 +18,20 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         _toRegister = findViewById(R.id.toLogin);
+        _btnLogin = findViewById(R.id.btn_login);
 
         _toRegister.setOnClickListener(this);
+        _btnLogin.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if(v == _toRegister){
+        if (v == _toRegister) {
             Intent intent = new Intent(Login.this, Register.class);
+            startActivity(intent);
+        }
+        if (v == _btnLogin) {
+            Intent intent = new Intent(Login.this, MainActivity.class);
             startActivity(intent);
         }
     }

@@ -10,5 +10,7 @@
     <color name="biru_primary">#01435A</color>
     <color name="biru_secondary">#C7F7F9</color>
     <color name="hitam">#383838</color>
+    <color name="golden">#FFD700</color>
+    <color name="light_grey">#d3d3d3</color>
 
 </resources>

@@ -15,13 +15,15 @@
         <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/font/comfortaa.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/font/comfortaa_bold.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/font/poppins.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/layout/activity_confirm_review.xml" value="0.25" />
         <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/layout/activity_contact.xml" value="0.264" />
         <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/layout/activity_login.xml" value="0.3937621832358674" />
-        <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/layout/activity_review.xml" value="0.536" />
         <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/layout/confirm_contact.xml" value="0.25" />
         <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/layout/resource.xml" value="0.264" />
-        <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/layout/resource_button.xml" value="0.264" />
+        <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/layout/resource_button.xml" value="0.26370757180156656" />
         <entry key="..\:/Users/moham/AndroidStudioProjects/bookingin/app/src/main/res/layout/resource_form.xml" value="0.2" />
       </map>
     </option>
@@ -31,5 +33,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
   </component>
 </project>
