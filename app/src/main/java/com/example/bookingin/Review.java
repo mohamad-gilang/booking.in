@@ -35,6 +35,7 @@ public class Review extends AppCompatActivity implements View.OnClickListener {
         _btnSubmit.setOnClickListener(this);
         _btnClear.setOnClickListener(this);
         _btnBack.setOnClickListener(this);
+
         RatingBar ratingBar = (RatingBar) findViewById(R.id.ratingBar);
         LayerDrawable stars = (LayerDrawable) ratingBar.getProgressDrawable();
         stars.getDrawable(2).setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_ATOP);
@@ -43,6 +44,7 @@ public class Review extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (v == _btnSubmit) {
+
 //            String recipientList = _email.getText().toString();
 //            String[] recipients = recipientList.split(",");
 //            String message = _message.getText().toString();
@@ -55,6 +57,7 @@ public class Review extends AppCompatActivity implements View.OnClickListener {
 //            intent.setType("message/rfc822");
 
 //            startActivity(Intent.createChooser(intent, "Choose an email client"));
+
             Intent intent = new Intent(Review.this, ConfirmReview.class);
             startActivity(intent);
             _message.getText().clear();

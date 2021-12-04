@@ -2,7 +2,9 @@ package com.example.bookingin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -10,12 +12,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Contact extends AppCompatActivity implements View.OnClickListener {
 
     Button _btnSubmit, _btnClear;
-    ImageButton _btnBack;
+    ImageButton _btnBack, _toWA, _toEmail;
     EditText _email, _message, _subject;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +31,16 @@ public class Contact extends AppCompatActivity implements View.OnClickListener {
         _email = (EditText) findViewById(R.id.email);
         _message = findViewById(R.id.message);
         _subject = findViewById(R.id.subject);
+        _toWA = findViewById(R.id.toWA);
+        _toEmail = findViewById(R.id.toEmail);
 
         _email.setText("booking.in@gmail.com", TextView.BufferType.EDITABLE);
 
         _btnSubmit.setOnClickListener(this);
         _btnClear.setOnClickListener(this);
         _btnBack.setOnClickListener(this);
+        _toWA.setOnClickListener(this);
+        _toEmail.setOnClickListener(this);
     }
 
     @Override
@@ -42,17 +50,6 @@ public class Contact extends AppCompatActivity implements View.OnClickListener {
             String[] recipients = recipientList.split(",");
             String subject = _subject.getText().toString();
             String message = _message.getText().toString();
-
-//            Intent intent = new Intent(Intent.ACTION_SEND);
-//            intent.putExtra(Intent.EXTRA_EMAIL, recipients);
-//            intent.putExtra(Intent.EXTRA_SUBJECT, "");
-//            intent.putExtra(Intent.EXTRA_TEXT, message);
-//
-//            intent.setType("message/rfc822");
-//
-//            startActivity(Intent.createChooser(intent, "Choose an email client"));
-//            Intent intent = new Intent(Contact.this, ConfirmContact.class);
-//            startActivity(intent);
 
             Intent intent = new Intent(Intent.ACTION_SENDTO);
             intent.setData(Uri.parse("mailto:")); // only email apps should handle this
@@ -64,10 +61,26 @@ public class Contact extends AppCompatActivity implements View.OnClickListener {
                 _subject.getText().clear();
                 _message.getText().clear();
             }
-        } else if (v == _btnClear) {
+        }
+        if (v == _toEmail) {
+            String recipientList = _email.getText().toString();
+            String[] recipients = recipientList.split(",");
+            Intent intent = new Intent(Intent.ACTION_SENDTO);
+            intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+            intent.putExtra(Intent.EXTRA_EMAIL, recipients);
+            startActivity(intent);
+        }
+        if (v == _toWA) {
+            String url = "https://api.whatsapp.com/send?phone=" + "+62 89664431664";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
+        }
+        if (v == _btnClear) {
             _subject.getText().clear();
             _message.getText().clear();
-        } else if (v == _btnBack) {
+        }
+        if (v == _btnBack) {
             finish();
         }
     }
