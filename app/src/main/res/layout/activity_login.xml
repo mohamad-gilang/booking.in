@@ -44,6 +44,7 @@
         android:inputType="textPassword"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
+        android:textColor="@color/biru_primary"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
