@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Summary">
 
     <TextView
@@ -133,93 +134,103 @@
                 android:id="@+id/mNama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="69dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="162dp"
-                android:layout_marginBottom="14dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/bg_blue_rounded"
                 android:fontFamily="@font/poppins"
+                android:justificationMode="inter_word"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
                 android:text="TextView"
                 android:textColor="@color/biru_primary"
                 android:textSize="16dp"
-                app:layout_constraintBottom_toTopOf="@+id/mHP"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView31"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/mHP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="68dp"
-                android:layout_marginTop="14dp"
-                android:layout_marginEnd="162dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="68dp"
+                android:background="@drawable/bg_blue_rounded"
                 android:fontFamily="@font/poppins"
+                android:justificationMode="inter_word"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
                 android:text="TextView"
                 android:textColor="@color/biru_primary"
                 android:textSize="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView33"
-                app:layout_constraintTop_toBottomOf="@+id/mNama" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/mTanggal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="80dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="162dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/bg_blue_rounded"
                 android:fontFamily="@font/poppins"
+                android:justificationMode="inter_word"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
                 android:text="TextView"
                 android:textColor="@color/biru_primary"
                 android:textSize="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView34"
-                app:layout_constraintTop_toBottomOf="@+id/mHP" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/mTiket"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="87dp"
-                android:layout_marginTop="14dp"
-                android:layout_marginEnd="162dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="152dp"
+                android:background="@drawable/bg_blue_rounded"
                 android:fontFamily="@font/poppins"
+                android:justificationMode="inter_word"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
                 android:text="TextView"
                 android:textColor="@color/biru_primary"
                 android:textSize="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView35"
-                app:layout_constraintTop_toBottomOf="@+id/mTanggal" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/mPaket"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="48dp"
-                android:layout_marginTop="23dp"
-                android:layout_marginEnd="162dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/bg_blue_rounded"
                 android:fontFamily="@font/poppins"
+                android:justificationMode="inter_word"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
                 android:text="TextView"
                 android:textColor="@color/biru_primary"
                 android:textSize="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView36"
-                app:layout_constraintTop_toBottomOf="@+id/mTiket" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/mTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="78dp"
-                android:layout_marginTop="23dp"
-                android:layout_marginEnd="162dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="244dp"
+                android:background="@drawable/bg_blue_rounded"
                 android:fontFamily="@font/poppins"
+                android:justificationMode="inter_word"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
                 android:text="TextView"
                 android:textColor="@color/biru_primary"
                 android:textSize="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView37"
-                app:layout_constraintTop_toBottomOf="@+id/mPaket" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

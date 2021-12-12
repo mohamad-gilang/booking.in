@@ -17,6 +17,15 @@
         android:theme="@style/Theme.Bookingin"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".wishlist.Wishlist"
+            android:exported="false" />
+        <activity
+            android:name=".wishlist.ActivityUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".wishlist.ActivityAdd"
+            android:exported="false" />
+        <activity
             android:name=".Summary"
             android:exported="false" />
         <activity

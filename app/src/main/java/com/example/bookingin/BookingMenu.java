@@ -63,8 +63,8 @@ public class BookingMenu extends AppCompatActivity implements View.OnClickListen
             Manifest.permission.READ_EXTERNAL_STORAGE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE
     };
-    TextView _setPaket;
-    EditText _txNama, _txHP, _txTiket, _txDate;
+
+    EditText _txNama, _txHP, _txTiket, _txDate, _setPaket;
     RadioGroup _RG1;
     RadioButton radioButton, _RB1, _RB2, _RB3;
     Button _btnClear, _btnBook, _btnPilih;
@@ -107,13 +107,13 @@ public class BookingMenu extends AppCompatActivity implements View.OnClickListen
                 int id = _RG1.getCheckedRadioButtonId();
                 switch (id) {
                     case R.id.rb1:
-                        _setPaket.setText("Paket 1");
+                        _setPaket.setText("Paket 1", TextView.BufferType.EDITABLE);
                         break;
                     case R.id.rb2:
-                        _setPaket.setText("Paket 2");
+                        _setPaket.setText("Paket 2", TextView.BufferType.EDITABLE);
                         break;
                     case R.id.rb3:
-                        _setPaket.setText("Paket 3");
+                        _setPaket.setText("Paket 3", TextView.BufferType.EDITABLE);
                         break;
                 }
             }
@@ -149,6 +149,7 @@ public class BookingMenu extends AppCompatActivity implements View.OnClickListen
             _txHP.getText().clear();
             _txDate.getText().clear();
             _txTiket.getText().clear();
+            _setPaket.setText("", TextView.BufferType.EDITABLE);
             _RG1.clearCheck();
             _txNama.requestFocus();
 
@@ -159,8 +160,20 @@ public class BookingMenu extends AppCompatActivity implements View.OnClickListen
         }
         if (v == _btnBook) {
             //untuk upload ke db
-            Intent intent = new Intent(BookingMenu.this, Summary.class);
-            startActivity(intent);
+            String nama = _txNama.getText().toString();
+            String hp = _txHP.getText().toString();
+            String tgl = _txDate.getText().toString();
+            String tiket = _txTiket.getText().toString();
+            String paket = _setPaket.getText().toString();
+            Intent i = new Intent(BookingMenu.this, Summary.class);
+
+            i.putExtra("NAMA", nama);
+            i.putExtra("HP", hp);
+            i.putExtra("TGL", tgl);
+            i.putExtra("TIKET", tiket);
+            i.putExtra("PAKET", paket);
+
+            startActivity(i);
 
         }
     }
