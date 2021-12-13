@@ -21,6 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.bookingin.MainActivity;
 import com.example.bookingin.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -134,6 +135,8 @@ public class Wishlist extends AppCompatActivity implements View.OnClickListener{
             Intent intent = new Intent(Wishlist.this, ActivityAdd.class);
             startActivity(intent);
         }if ( view == _btnBack) {
+            Intent intent = new Intent(Wishlist.this, MainActivity.class);
+            startActivity(intent);
             finish();
         }
 

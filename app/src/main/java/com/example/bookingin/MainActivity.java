@@ -8,17 +8,23 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 
 import com.example.bookingin.wishlist.Wishlist;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     FrameLayout _btnContact, _btnReview, _btnBooking, _btnMap, _btnWishlist, _btnDestination;
+    Button _btnLogout;
     Context context;
+    private FirebaseAuth mAuth;
+    FirebaseUser currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         _btnMap = findViewById(R.id.toMap);
         _btnWishlist = findViewById(R.id.toWishlist);
         _btnDestination = findViewById(R.id.toDestination);
+        _btnLogout = findViewById(R.id.btn_logout);
+        mAuth = FirebaseAuth.getInstance();
 
         _btnContact.setOnClickListener(this);
         _btnReview.setOnClickListener(this);
@@ -37,9 +45,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         _btnMap.setOnClickListener(this);
         _btnWishlist.setOnClickListener(this);
         _btnDestination.setOnClickListener(this);
+        _btnLogout.setOnClickListener(this);
     }
 
     public void onClick(View v) {
+        if (v == _btnLogout) {
+            FirebaseAuth.getInstance().signOut();
+            finish();
+        }
         if (v == _btnBooking) {
             Intent intent = new Intent(MainActivity.this, BookingMenu.class);
             startActivity(intent);
