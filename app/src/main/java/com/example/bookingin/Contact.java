@@ -14,6 +14,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.bookingin.confirm.ConfirmContact;
+
 public class Contact extends AppCompatActivity implements View.OnClickListener {
 
     Button _btnSubmit, _btnClear;
@@ -60,7 +62,11 @@ public class Contact extends AppCompatActivity implements View.OnClickListener {
                 startActivity(intent);
                 _subject.getText().clear();
                 _message.getText().clear();
+
             }
+//            Intent i = new Intent(Contact.this, ConfirmContact.class);
+//            startActivity(i);
+
         }
         if (v == _toEmail) {
             String recipientList = _email.getText().toString();

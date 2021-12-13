@@ -163,7 +163,7 @@ public class BookingMenu extends AppCompatActivity implements View.OnClickListen
             String nama = _txNama.getText().toString();
             String hp = _txHP.getText().toString();
             String tgl = _txDate.getText().toString();
-            String tiket = _txTiket.getText().toString();
+            int tiket = Integer.parseInt( _txTiket.getText().toString() );
             String paket = _setPaket.getText().toString();
             Intent i = new Intent(BookingMenu.this, Summary.class);
 

@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/confirm" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="102dp"
@@ -51,7 +51,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_cont"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/confirm" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_cont"

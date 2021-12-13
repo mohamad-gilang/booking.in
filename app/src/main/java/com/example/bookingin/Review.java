@@ -12,7 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RatingBar;
-import android.widget.TextView;
+
+import com.example.bookingin.confirm.ConfirmReview;
 
 public class Review extends AppCompatActivity implements View.OnClickListener {
 

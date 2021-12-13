@@ -17,6 +17,15 @@
         android:theme="@style/Theme.Bookingin"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".confirm.ConfirmReview"
+            android:exported="false" />
+        <activity
+            android:name=".confirm.ConfirmBooking"
+            android:exported="false" />
+        <activity
+            android:name=".confirm.ConfirmContact"
+            android:exported="false" />
+        <activity
             android:name=".wishlist.Wishlist"
             android:exported="false" />
         <activity
@@ -29,16 +38,10 @@
             android:name=".Summary"
             android:exported="false" />
         <activity
-            android:name=".WisataList.WisataList"
-            android:exported="false" />
-        <activity
             android:name=".Map"
             android:exported="false" />
         <activity
             android:name=".BookingMenu"
-            android:exported="false" />
-        <activity
-            android:name=".ConfirmReview"
             android:exported="false" />
         <activity
             android:name=".Review"
@@ -48,9 +51,6 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ConfirmContact"
             android:exported="false" />
         <activity
             android:name=".Contact"

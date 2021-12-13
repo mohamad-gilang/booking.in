@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,8 +16,8 @@ import com.example.bookingin.wishlist.Wishlist;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    ImageButton _btnDestination;
-    FrameLayout _btnContact, _btnReview, _btnBooking, _btnMap, _btnWishlist;
+
+    FrameLayout _btnContact, _btnReview, _btnBooking, _btnMap, _btnWishlist, _btnDestination;
     Context context;
 
     @Override
@@ -28,15 +29,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         _btnBooking = findViewById(R.id.toBooking);
         _btnMap = findViewById(R.id.toMap);
         _btnWishlist = findViewById(R.id.toWishlist);
+        _btnDestination = findViewById(R.id.toDestination);
 
         _btnContact.setOnClickListener(this);
         _btnReview.setOnClickListener(this);
         _btnBooking.setOnClickListener(this);
         _btnMap.setOnClickListener(this);
         _btnWishlist.setOnClickListener(this);
-
+        _btnDestination.setOnClickListener(this);
     }
-
 
     public void onClick(View v) {
         if (v == _btnBooking) {
@@ -59,6 +60,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(MainActivity.this, Map.class);
             startActivity(intent);
         }
+        if (v == _btnDestination) {
+            String url = "https://www.tripadvisor.com/Tourism-g297710-Malang_East_Java_Java-Vacations.html";
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+            startActivity(intent);
+        }
     }
-
 }
