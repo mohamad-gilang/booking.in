@@ -43,8 +43,7 @@ public class Summary extends AppCompatActivity implements View.OnClickListener {
     String name, phone, date, paket, passenger;
     Integer total;
     TextView _txtSummaryName, _txtSummaryPhone, _txtSummaryDate, _txtSummaryPackage, _txtSummaryPassenger, _txtSummaryTotal;
-    Button _btnSummaryClear, _btnSummaryContinue;
-    ImageButton _btnUploadInvoice, _btnUploadCard;
+    Button _btnSummaryClear, _btnSummaryContinue, _btnUploadInvoice, _btnUploadCard;
     ImageView _imgPreviewInvoice, _imgPreviewCard;
 
     @Override
