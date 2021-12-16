@@ -17,6 +17,12 @@
         android:theme="@style/Theme.Bookingin"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Confirm"
+            android:exported="false" />
+        <activity
+            android:name=".Booking"
+            android:exported="false" />
+        <activity
             android:name=".confirm.ConfirmReview"
             android:exported="false" />
         <activity

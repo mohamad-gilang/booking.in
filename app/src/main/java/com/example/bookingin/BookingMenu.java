@@ -1,26 +1,12 @@
 package com.example.bookingin;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
-import android.os.Handler;
-import android.provider.MediaStore;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -30,30 +16,8 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.androidnetworking.AndroidNetworking;
-import com.androidnetworking.common.Priority;
-import com.androidnetworking.error.ANError;
-import com.androidnetworking.interfaces.JSONObjectRequestListener;
-import com.bumptech.glide.Glide;
-
-import org.json.JSONObject;
-
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
-
-import okhttp3.MediaType;
-import okhttp3.MultipartBody;
-import okhttp3.RequestBody;
-import okhttp3.ResponseBody;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
 
 public class BookingMenu extends AppCompatActivity implements View.OnClickListener, DatePickerDialog.OnDateSetListener {
 
@@ -78,22 +42,22 @@ public class BookingMenu extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
-        _txNama = findViewById(R.id.txName);
-        _txHP = findViewById(R.id.txHP);
-        _txDate = findViewById(R.id.txDate);
-        _dateShow = findViewById(R.id.btn_calendar);
-        _txTiket = findViewById(R.id.txTiket);
+        _txNama = findViewById(R.id.txtBookingName);
+        _txHP = findViewById(R.id.txtBookingPhone);
+        _txDate = findViewById(R.id.txtBookingDate);
+        _dateShow = findViewById(R.id.btnBookingDate);
+        _txTiket = findViewById(R.id.txtBookingPassenger);
         _setPaket = findViewById(R.id.setPaket);
 
         progressDialog = new ProgressDialog(this);
 
-        _RG1 = findViewById(R.id.radio_group_1);
-        _RB1 = findViewById(R.id.rb1);
-        _RB2 = findViewById(R.id.rb2);
-        _RB3 = findViewById(R.id.rb3);
+        _RG1 = findViewById(R.id.bookingPackageGroup);
+        _RB1 = findViewById(R.id.bookingPackage1);
+        _RB2 = findViewById(R.id.bookingPackage2);
+        _RB3 = findViewById(R.id.bookingPackage3);
 
-        _btnClear = findViewById(R.id.btn_clear);
-        _btnBook = findViewById(R.id.btn_submit);
+        _btnClear = findViewById(R.id.btnSummaryClear);
+        _btnBook = findViewById(R.id.btnSummaryContinue);
         _btnBack = findViewById(R.id.btn_back);
 
         _dateShow.setOnClickListener(this);
@@ -106,13 +70,13 @@ public class BookingMenu extends AppCompatActivity implements View.OnClickListen
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 int id = _RG1.getCheckedRadioButtonId();
                 switch (id) {
-                    case R.id.rb1:
+                    case R.id.bookingPackage1:
                         _setPaket.setText("Paket 1", TextView.BufferType.EDITABLE);
                         break;
-                    case R.id.rb2:
+                    case R.id.bookingPackage2:
                         _setPaket.setText("Paket 2", TextView.BufferType.EDITABLE);
                         break;
-                    case R.id.rb3:
+                    case R.id.bookingPackage3:
                         _setPaket.setText("Paket 3", TextView.BufferType.EDITABLE);
                         break;
                 }
