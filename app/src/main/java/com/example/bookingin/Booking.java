@@ -14,6 +14,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
@@ -27,6 +30,7 @@ public class Booking extends AppCompatActivity implements View.OnClickListener {
     String paket, date;
     ImageButton _btnBookingDate;
 
+    private DatabaseReference mDatabase;
     private DatePickerDialog datePickerDialog;
     private SimpleDateFormat dateFormatter;
 
@@ -102,6 +106,9 @@ public class Booking extends AppCompatActivity implements View.OnClickListener {
                     paket = "Paket 3";
                 }
                 summary.putExtra("paket", paket);
+                BookingData baru = new BookingData (_txtBookingName.getText().toString(), _txtBookingPhone.getText().toString(), _txtBookingDate.getText().toString(), _txtBookingPassenger.getText().toString(), paket);
+                mDatabase = FirebaseDatabase.getInstance().getReference();
+                mDatabase.child("bookings").push().setValue(baru);
                 startActivity(summary);
             }
         } else if (view.getId() == _btnBookingClear.getId()) {
