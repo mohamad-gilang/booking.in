@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -12,9 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.example.bookingin.confirm.ConfirmContact;
 
 public class Contact extends AppCompatActivity implements View.OnClickListener {
 
@@ -27,8 +23,8 @@ public class Contact extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
-        _btnSubmit = findViewById(R.id.btn_submit);
-        _btnClear = findViewById(R.id.btn_clear);
+        _btnSubmit = findViewById(R.id.btnContactContinue);
+        _btnClear = findViewById(R.id.btnContactClear);
         _btnBack = findViewById(R.id.btn_back);
         _email = (EditText) findViewById(R.id.email);
         _message = findViewById(R.id.message);

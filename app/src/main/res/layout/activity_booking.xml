@@ -1,300 +1,305 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".BookingMenu">
+    tools:context=".Booking">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="154dp"
-        android:fontFamily="@font/comfortaa_bold"
-        android:text="Booking"
-        android:textColor="@color/biru_primary"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/btn_back"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/bg_blue_rounded"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/arrow_back" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="154dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Booking"
+            android:textColor="@color/biru_primary"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.046" />
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Package"
-        android:textColor="@color/biru_primary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529" />
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_blue_rounded"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrow_back" />
 
-    <LinearLayout
-        android:layout_width="357dp"
-        android:layout_height="141dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="185dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25"
-        app:layout_constraintVertical_bias="0.25">
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Package"
+            android:textColor="@color/biru_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.529" />
 
-        <RadioGroup
-            android:id="@+id/radio_group_1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="357dp"
+            android:layout_height="141dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="185dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25"
+            app:layout_constraintVertical_bias="0.25">
 
-            <RadioButton
-                android:id="@+id/rb1"
+            <RadioGroup
+                android:id="@+id/bookingPackageGroup"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:text="Package 1 (Tickets Only)"
-                android:textColor="@color/biru_primary" />
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
-            <RadioButton
-                android:id="@+id/rb2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:text="Package 2 (Tickets and Snacks)"
-                android:textColor="@color/biru_primary" />
+                <RadioButton
+                    android:id="@+id/bookingPackage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Package 1 (Tickets Only)"
+                    android:textColor="@color/biru_primary" />
 
-            <RadioButton
-                android:id="@+id/rb3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:text="Package 3 (Tickets, Snacks, and Transport)"
-                android:textColor="@color/biru_primary" />
-        </RadioGroup>
+                <RadioButton
+                    android:id="@+id/bookingPackage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Package 2 (Tickets and Snacks)"
+                    android:textColor="@color/biru_primary" />
 
-    </LinearLayout>
+                <RadioButton
+                    android:id="@+id/bookingPackage3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Package 3 (Tickets, Snacks, and Transport)"
+                    android:textColor="@color/biru_primary" />
+            </RadioGroup>
 
-    <EditText
-        android:id="@+id/txName"
-        android:layout_width="365dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="24dp"
-        android:background="@drawable/btn_secondary"
-        android:ems="10"
-        android:fontFamily="@font/poppins"
-        android:hint="Full Name"
-        android:inputType="textPersonName|textNoSuggestions"
-        android:paddingStart="12dp"
-        android:textColor="@color/biru_primary"
-        android:textSize="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
+        </LinearLayout>
 
-    <EditText
-        android:id="@+id/txTiket"
-        android:layout_width="160dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/btn_secondary"
-        android:ems="10"
-        android:fontFamily="@font/poppins"
-        android:hint="PAX"
-        android:inputType="number|textNoSuggestions"
-        android:paddingStart="12dp"
-        android:textColor="@color/biru_primary"
-        android:textSize="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.973"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.465" />
+        <EditText
+            android:id="@+id/txtBookingName"
+            android:layout_width="365dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/btn_secondary"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Full Name"
+            android:inputType="textPersonName|textNoSuggestions"
+            android:paddingStart="12dp"
+            android:textColor="@color/biru_primary"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.198" />
 
-    <EditText
-        android:id="@+id/txDate"
-        android:layout_width="120dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="24dp"
-        android:background="@drawable/btn_secondary"
-        android:ems="10"
-        android:fontFamily="@font/poppins"
-        android:hint="Depature"
-        android:inputType="date|textNoSuggestions"
-        android:paddingStart="12dp"
-        android:textColor="@color/biru_primary"
-        android:textSize="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.465" />
+        <EditText
+            android:id="@+id/txtBookingPassenger"
+            android:layout_width="160dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/btn_secondary"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="PAX"
+            android:inputType="number|textNoSuggestions"
+            android:paddingStart="12dp"
+            android:textColor="@color/biru_primary"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.973"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.465" />
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Person Amount"
-        android:textColor="@color/biru_primary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.797"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        <EditText
+            android:id="@+id/txtBookingDate"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/btn_secondary"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Depature"
+            android:inputType="date|textNoSuggestions"
+            android:paddingStart="12dp"
+            android:textColor="@color/biru_primary"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.465" />
 
-    <TextView
-        android:id="@+id/datePick"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Date"
-        android:textColor="@color/biru_primary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Person Amount"
+            android:textColor="@color/biru_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.797"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
 
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Name"
-        android:textColor="@color/biru_primary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
+        <TextView
+            android:id="@+id/datePick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Date"
+            android:textColor="@color/biru_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Phone"
-        android:textColor="@color/biru_primary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271" />
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Name"
+            android:textColor="@color/biru_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.141" />
 
-    <EditText
-        android:id="@+id/txHP"
-        android:layout_width="365dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="24dp"
-        android:background="@drawable/btn_secondary"
-        android:ems="10"
-        android:fontFamily="@font/poppins"
-        android:hint="Phone Number"
-        android:inputType="number|textNoSuggestions"
-        android:paddingStart="12dp"
-        android:textColor="@color/biru_primary"
-        android:textSize="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327" />
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Phone"
+            android:textColor="@color/biru_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.271" />
 
-    <androidx.appcompat.widget.AppCompatButton
+        <EditText
+            android:id="@+id/txtBookingPhone"
+            android:layout_width="365dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/btn_secondary"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Phone Number"
+            android:inputType="number|textNoSuggestions"
+            android:paddingStart="12dp"
+            android:textColor="@color/biru_primary"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.327" />
 
-        android:id="@+id/btn_clear"
-        android:layout_width="165dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginBottom="51dp"
-        android:background="@drawable/btn_secondary"
-        android:fontFamily="@font/poppins"
-        android:text="Clear"
-        android:textColor="@color/biru_primary"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_submit"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        <androidx.appcompat.widget.AppCompatButton
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_submit"
-        android:layout_width="165dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="51dp"
-        android:background="@drawable/btn_primary"
-        android:fontFamily="@font/poppins"
-        android:text="Book"
-        android:textColor="@color/white"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_clear"
-        app:layout_constraintVertical_bias="1.0" />
+            android:id="@+id/btnSummaryClear"
+            android:layout_width="165dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginBottom="51dp"
+            android:background="@drawable/btn_secondary"
+            android:fontFamily="@font/poppins"
+            android:text="Clear"
+            android:textColor="@color/biru_primary"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSummaryContinue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
-    <ImageButton
-        android:id="@+id/btn_calendar"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
-        android:background="@color/biru_primary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.465"
-        app:srcCompat="@drawable/ic_date" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSummaryContinue"
+            android:layout_width="165dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="51dp"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="@font/poppins"
+            android:text="Book"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnSummaryClear"
+            app:layout_constraintVertical_bias="1.0" />
 
-    <EditText
-        android:id="@+id/setPaket"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="376dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="336dp"
-        android:shadowColor="@color/white"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView25"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/btnBookingDate"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@color/biru_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.406"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.465"
+            app:srcCompat="@drawable/ic_date" />
 
+        <EditText
+            android:id="@+id/setPaket"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="376dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="336dp"
+            android:shadowColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView25"
+            app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
