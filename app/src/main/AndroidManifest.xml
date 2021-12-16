@@ -47,9 +47,6 @@
             android:name=".Map"
             android:exported="false" />
         <activity
-            android:name=".BookingMenu"
-            android:exported="false" />
-        <activity
             android:name=".Review"
             android:exported="false" />
         <activity

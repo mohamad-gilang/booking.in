@@ -116,11 +116,11 @@
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnSummaryClear" />
+        app:layout_constraintStart_toEndOf="@+id/btnAddClear" />
 
     <androidx.appcompat.widget.AppCompatButton
 
-        android:id="@+id/btnSummaryClear"
+        android:id="@+id/btnAddClear"
         android:layout_width="165dp"
         android:layout_height="56dp"
         android:layout_marginStart="24dp"

@@ -31,7 +31,7 @@ public class ActivityUpdate extends AppCompatActivity {
         title_input = findViewById(R.id.title_input);
         budget_input = findViewById(R.id.budget_input);
         update_button = findViewById(R.id.btn_update);
-        delete_button = findViewById(R.id.btnSummaryClear);
+        delete_button = findViewById(R.id.btnDelete);
         _btnBack = findViewById(R.id.btn_back);
 
         _btnBack.setOnClickListener(new View.OnClickListener() {

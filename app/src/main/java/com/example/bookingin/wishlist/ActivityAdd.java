@@ -26,7 +26,7 @@ public class ActivityAdd extends AppCompatActivity {
         title_input = findViewById(R.id.title_input);
         budget_input = findViewById(R.id.budget_input);
         add_button = findViewById(R.id.btn_add);
-        clear_button = findViewById(R.id.btnSummaryClear);
+        clear_button = findViewById(R.id.btnAddClear);
         _btnBack = findViewById(R.id.btn_back);
 
         budget_input.setText("Rp." , TextView.BufferType.EDITABLE);

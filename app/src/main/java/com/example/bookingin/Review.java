@@ -25,8 +25,8 @@ public class Review extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_review);
-        _btnSubmit = findViewById(R.id.btnSummaryContinue);
-        _btnClear = findViewById(R.id.btnSummaryClear);
+        _btnSubmit = findViewById(R.id.btnReviewContinue);
+        _btnClear = findViewById(R.id.btnReviewClear);
         _btnBack = findViewById(R.id.btn_back);
         _email = (EditText) findViewById(R.id.email);
         _message = findViewById(R.id.message);
