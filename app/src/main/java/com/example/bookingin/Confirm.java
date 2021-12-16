@@ -23,8 +23,8 @@ public class Confirm extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         if (view.getId() == _btn_cont.getId()) {
-            Intent summaryContinue = new Intent(this, Confirm.class);
-            startActivity(summaryContinue);
+            Intent home = new Intent(this, MainActivity.class);
+            startActivity(home);
         }
     }
 }
