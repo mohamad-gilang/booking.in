@@ -256,8 +256,8 @@ public class Summary extends AppCompatActivity implements View.OnClickListener {
             Intent summaryContinue = new Intent(this, Confirm.class);
             startActivity(summaryContinue);
         } else if (view.getId() == _btnSummaryClear.getId()) {
-            _imgPreviewCard.setImageResource(R.drawable.ic_launcher_background);
-            _imgPreviewInvoice.setImageResource(R.drawable.ic_launcher_background);
+            _imgPreviewCard.setImageResource(android.R.color.transparent);
+            _imgPreviewInvoice.setImageResource(android.R.color.transparent);
         }
     }
 
