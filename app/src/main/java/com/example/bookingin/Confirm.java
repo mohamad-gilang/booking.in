@@ -25,6 +25,7 @@ public class Confirm extends AppCompatActivity implements View.OnClickListener {
         if (view.getId() == _btn_cont.getId()) {
             Intent home = new Intent(this, MainActivity.class);
             startActivity(home);
+            finish();
         }
     }
 }
