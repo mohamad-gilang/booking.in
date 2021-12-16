@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             finish();
         }
         if (v == _btnBooking) {
-            Intent intent = new Intent(MainActivity.this, Booking.class);
+            Intent intent = new Intent(MainActivity.this, BookingMenu.class);
             startActivity(intent);
         }
         if (v == _btnContact) {

@@ -187,7 +187,7 @@
         app:layout_constraintVertical_bias="0.689" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnContactContinue"
+        android:id="@+id/btn_submit"
         android:layout_width="165dp"
         android:layout_height="56dp"
         android:layout_marginStart="24dp"
@@ -200,11 +200,11 @@
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnContactClear" />
+        app:layout_constraintStart_toEndOf="@+id/btn_clear" />
 
     <androidx.appcompat.widget.AppCompatButton
 
-        android:id="@+id/btnContactClear"
+        android:id="@+id/btn_clear"
         android:layout_width="165dp"
         android:layout_height="56dp"
         android:layout_marginStart="24dp"
@@ -215,7 +215,7 @@
         android:textColor="@color/biru_primary"
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnContactContinue"
+        app:layout_constraintEnd_toStartOf="@+id/btn_submit"
         app:layout_constraintStart_toStartOf="parent" />
 
 
