@@ -2,6 +2,7 @@ package com.example.bookingin.wishlist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.example.bookingin.Contact;
+import com.example.bookingin.MainActivity;
 import com.example.bookingin.R;
 
 public class ActivityAdd extends AppCompatActivity {
@@ -26,7 +29,7 @@ public class ActivityAdd extends AppCompatActivity {
         title_input = findViewById(R.id.title_input);
         budget_input = findViewById(R.id.budget_input);
         add_button = findViewById(R.id.btn_add);
-        clear_button = findViewById(R.id.btnAddClear);
+        clear_button = findViewById(R.id.btn_clear);
         _btnBack = findViewById(R.id.btn_back);
 
         budget_input.setText("Rp." , TextView.BufferType.EDITABLE);
